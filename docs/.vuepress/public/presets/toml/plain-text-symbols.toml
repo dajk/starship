@@ -212,5 +212,8 @@ symbol = "swift "
 [terraform]
 symbol = "terraform "
 
+[wrangler]
+symbol = "wrangler "
+
 [zig]
 symbol = "zig "

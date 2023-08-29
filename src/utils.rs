@@ -437,6 +437,10 @@ Target: x86_64-apple-darwin19.4.0\n",
             stdout: String::from("V 0.2 30c0659"),
             stderr: String::default()
         }),
+        "wrangler --version" => Some(CommandOutput {
+            stdout: String::from("2.4.0"),
+            stderr: String::default()
+        }),
         "zig version" => Some(CommandOutput {
             stdout: String::from("0.6.0\n"),
             stderr: String::default(),

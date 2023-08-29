@@ -91,6 +91,7 @@ pub const PROMPT_ORDER: &[&str] = &[
     "terraform",
     "vlang",
     "vagrant",
+    "wrangler",
     "zig",
     // ↑ Toolchain version modules ↑
     "buf",

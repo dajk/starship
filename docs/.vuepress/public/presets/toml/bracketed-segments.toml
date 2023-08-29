@@ -184,6 +184,9 @@ format = '\[[$symbol($version)]($style)\]'
 [vlang]
 format = '\[[$symbol($version)]($style)\]'
 
+[wrangler]
+format = '\[[$symbol($version)]($style)\]'
+
 [zig]
 format = '\[[$symbol($version)]($style)\]'
 

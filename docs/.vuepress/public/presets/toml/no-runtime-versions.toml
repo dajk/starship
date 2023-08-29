@@ -118,5 +118,8 @@ format = 'via [$symbol]($style)'
 [vlang]
 format = 'via [$symbol]($style)'
 
+[wrangler]
+format = 'via [$symbol]($style)'
+
 [zig]
 format = 'via [$symbol]($style)'

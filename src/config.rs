@@ -400,6 +400,7 @@ fn parse_color_string(
         "blue" => Some(Color::Blue),
         "purple" => Some(Color::Purple),
         "cyan" => Some(Color::Cyan),
+        "orange" => Some(Color::Rgb(246, 130, 31)),
         "white" => Some(Color::White),
         "bright-black" => Some(Color::DarkGray), // "bright-black" is dark grey
         "bright-red" => Some(Color::LightRed),

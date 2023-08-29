@@ -1724,6 +1724,26 @@
         }
       ]
     },
+    "wrangler": {
+      "default": {
+        "detect_extensions": [],
+        "detect_files": [
+          "package.json",
+          "wrangler.toml"
+        ],
+        "detect_folders": [],
+        "disabled": false,
+        "format": "via [$symbol($version )]($style)",
+        "style": "bold orange",
+        "symbol": "🤠 ",
+        "version_format": "v${raw}"
+      },
+      "allOf": [
+        {
+          "$ref": "#/definitions/WranglerConfig"
+        }
+      ]
+    },
     "zig": {
       "default": {
         "detect_extensions": [
@@ -5738,6 +5758,56 @@
             "v.mod",
             "vpkg.json",
             ".vpkg-lock.json"
+          ],
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "detect_folders": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "WranglerConfig": {
+      "type": "object",
+      "properties": {
+        "format": {
+          "default": "via [$symbol($version )]($style)",
+          "type": "string"
+        },
+        "version_format": {
+          "default": "v${raw}",
+          "type": "string"
+        },
+        "symbol": {
+          "default": "🤠 ",
+          "type": "string"
+        },
+        "style": {
+          "default": "bold orange",
+          "type": "string"
+        },
+        "disabled": {
+          "default": false,
+          "type": "boolean"
+        },
+        "detect_extensions": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "detect_files": {
+          "default": [
+            "package.json",
+            "wrangler.toml"
           ],
           "type": "array",
           "items": {

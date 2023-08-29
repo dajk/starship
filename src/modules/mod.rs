@@ -84,6 +84,7 @@ mod utils;
 mod vagrant;
 mod vcsh;
 mod vlang;
+mod wrangler;
 mod zig;
 
 #[cfg(feature = "battery")]
@@ -188,6 +189,7 @@ pub fn handle<'a>(module: &str, context: &'a Context) -> Option<Module<'a>> {
             "vlang" => vlang::module(context),
             "vagrant" => vagrant::module(context),
             "vcsh" => vcsh::module(context),
+            "wrangler" => wrangler::module(context),
             "zig" => zig::module(context),
             env if env.starts_with("env_var.") => {
                 env_var::module(env.strip_prefix("env_var."), context)
@@ -304,6 +306,7 @@ pub fn description(module: &str) -> &'static str {
         "vagrant" => "The currently installed version of Vagrant",
         "vcsh" => "The currently active VCSH repository",
         "vlang" => "The currently installed version of V",
+        "wrangler" => "The currently installed version of wrangler",
         "zig" => "The currently installed version of Zig",
         _ => "<no description>",
     }
